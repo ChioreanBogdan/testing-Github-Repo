@@ -2,8 +2,9 @@ import FormSubmitButton from "@/components/FormSubmitButton";
 import { prisma } from "@/lib/db/prisma";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
-import { authOptions } from "../api/auth/[...nextauth].js/route";
+//import { authOptions } from "../api/auth/[...nextauth].js/route";
 import { getSession } from "next-auth/react";
+import { authOptions } from "@/lib/auth";
 
 export const metadata = {
     title: "Add Product - Umag",
