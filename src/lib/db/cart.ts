@@ -3,7 +3,7 @@ import { prisma } from "./prisma";
 import { Cart, Prisma } from "@prisma/client";
 import { number } from "zod";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/app/api/auth/[...nextauth].js/route";
 
 export type CartWithProducts = Prisma.CartGetPayload<{
     include: { items: { include: { product: true } } }
