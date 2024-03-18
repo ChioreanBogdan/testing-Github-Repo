@@ -6,9 +6,9 @@ import { redirect } from "next/navigation";
 import { getCart } from "@/lib/db/cart";
 import ShoppingCartButton from "./ShoppingCartButton";
 import { getServerSession } from "next-auth";
-//import { authOptions } from "../api/auth/[...nextauth].js/route";
+import { authOptions } from "../api/auth/[...nextauth].js/route";
 import UserMenuButton from "./UserMenuButton";
-import { authOptions } from "@/lib/auth";
+//import { authOptions } from "@/lib/auth";
 
 async function searchProducts(formData: FormData) {
     "use server";
